@@ -1,6 +1,5 @@
-import org.abondat.experimental.guicedemo.chef.Chef;
-import org.abondat.experimental.guicedemo.chef.FortuneService;
-import org.abondat.experimental.guicedemo.chef.FortuneServiceFactory;
+import org.abondat.experimental.guicedemo.fortune.Chef;
+import org.abondat.experimental.guicedemo.fortune.FortuneService;
 import org.junit.Test;
 
 import static org.junit.Assert.assertTrue;
@@ -12,16 +11,10 @@ public class ChefTest {
 
     @Test
     public void makeFortunateCookie(){
-        final FortuneService orig = FortuneServiceFactory.getFortuneService();
-        try {
-            FortuneServiceMock mock = new FortuneServiceMock();
-            FortuneServiceFactory.setFortuneService(mock);
-            Chef chef = new Chef();
-            chef.makeFortuneCookie();
-            assertTrue(mock.calledOnce());
-        } finally {
-            FortuneServiceFactory.setFortuneService(orig);
-        }
+       FortuneServiceMock mock = new FortuneServiceMock();
+       Chef chef = new Chef(mock);
+       chef.makeFortuneCookie();
+       assertTrue(mock.calledOnce());
     }
 
     public class FortuneServiceMock implements FortuneService {

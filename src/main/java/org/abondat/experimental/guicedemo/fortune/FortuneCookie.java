@@ -1,4 +1,4 @@
-package org.abondat.experimental.guicedemo.chef;
+package org.abondat.experimental.guicedemo.fortune;
 
 /**
  * Created by alexabon on 2/6/2017.

@@ -1,4 +1,4 @@
-package org.abondat.experimental.guicedemo.chef;
+package org.abondat.experimental.guicedemo.fortune;
 
 import java.util.Arrays;
 import java.util.List;

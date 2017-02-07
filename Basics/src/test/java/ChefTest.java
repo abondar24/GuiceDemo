@@ -1,5 +1,5 @@
-import org.abondat.experimental.guicedemo.fortune.Chef;
-import org.abondat.experimental.guicedemo.fortune.FortuneService;
+import org.abondar.experimental.guicedemo.basics.fortune.Chef;
+import org.abondar.experimental.guicedemo.basics.fortune.FortuneService;
 import org.junit.Test;
 
 import static org.junit.Assert.assertTrue;

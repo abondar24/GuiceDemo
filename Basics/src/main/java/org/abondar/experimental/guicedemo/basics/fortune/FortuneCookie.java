@@ -1,4 +1,4 @@
-package org.abondat.experimental.guicedemo.fortune;
+package org.abondar.experimental.guicedemo.basics.fortune;
 
 /**
  * Created by alexabon on 2/6/2017.

@@ -1,4 +1,4 @@
-package org.abondat.experimental.guicedemo.fortune;
+package org.abondar.experimental.guicedemo.basics.fortune;
 
 import java.util.Arrays;
 import java.util.List;

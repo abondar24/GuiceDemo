@@ -1,15 +1,16 @@
 package org.abondar.experimental.guicedemo.web;
 
 import com.google.inject.Guice;
-import com.google.inject.Inject;
 import com.google.inject.Injector;
 
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
+import javax.servlet.annotation.WebListener;
 
 /**
  * Created by alexabon on 2/7/2017.
  */
+@WebListener
 public class GuiceServletContextListener implements ServletContextListener {
     public static final String KEY = Injector.class.getName();
 

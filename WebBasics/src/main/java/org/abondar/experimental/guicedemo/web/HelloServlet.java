@@ -7,6 +7,7 @@ import com.google.inject.name.Named;
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -16,6 +17,7 @@ import java.io.PrintWriter;
 /**
  * Created by alexabon on 2/7/2017.
  */
+@WebServlet(urlPatterns = "/*", name = "helloServlet")
 public class HelloServlet extends HttpServlet {
 
     @Inject
@@ -33,7 +35,6 @@ public class HelloServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        super.doGet(req, resp);
         resp.setContentType("text/html");
         PrintWriter writer = resp.getWriter();
         writer.printf("<h1>Welcome to the %s application!</h1>%n", appName);

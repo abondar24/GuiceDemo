@@ -1,6 +1,8 @@
-package org.abondar.experimental.guicedemo.basics.customscope;
+package org.abondar.experimental.guicedemo.basics.customscope.module;
 
 import com.google.inject.AbstractModule;
+import org.abondar.experimental.guicedemo.basics.customscope.CustomScopes;
+import org.abondar.experimental.guicedemo.basics.customscope.Person;
 
 /**
  * Created by alexabon on 2/7/2017.

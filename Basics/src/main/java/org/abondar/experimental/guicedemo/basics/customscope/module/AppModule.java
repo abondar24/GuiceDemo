@@ -1,4 +1,4 @@
-package org.abondar.experimental.guicedemo.basics.customscope;
+package org.abondar.experimental.guicedemo.basics.customscope.module;
 
 import com.google.inject.AbstractModule;
 

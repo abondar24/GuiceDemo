@@ -1,7 +1,7 @@
 package org.abondar.experimental.guicedemo.basics.command;
 
 
-import java.io.FileWriter;
+import org.abondar.experimental.guicedemo.basics.fortune.command.FortuneCommand;
 
 public class CommandSwitcher {
 
@@ -16,6 +16,10 @@ public class CommandSwitcher {
         try {
             switch (Commands.valueOf(cmd)){
 
+                case FU:
+                    FortuneCommand fc = new FortuneCommand();
+                    executor.executeCommand(fc);
+                    break;
 
             }
         } catch (IllegalArgumentException ex){

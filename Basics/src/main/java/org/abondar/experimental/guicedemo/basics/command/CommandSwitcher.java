@@ -3,6 +3,7 @@ package org.abondar.experimental.guicedemo.basics.command;
 
 import org.abondar.experimental.guicedemo.basics.fortune.command.FortuneCommand;
 import org.abondar.experimental.guicedemo.basics.gum.GumCommand;
+import org.abondar.experimental.guicedemo.basics.typeliteral.GenericTypeCommand;
 
 public class CommandSwitcher {
 
@@ -20,6 +21,11 @@ public class CommandSwitcher {
                 case GC:
                     GumCommand gc = new GumCommand();
                     executor.executeCommand(gc);
+                    break;
+
+                case GTC:
+                    GenericTypeCommand gtc = new GenericTypeCommand();
+                    executor.executeCommand(gtc);
                     break;
 
                 case FC:

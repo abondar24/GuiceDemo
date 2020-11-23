@@ -2,6 +2,7 @@ package org.abondar.experimental.guicedemo.basics.command;
 
 
 import org.abondar.experimental.guicedemo.basics.fortune.command.FortuneCommand;
+import org.abondar.experimental.guicedemo.basics.gum.GumCommand;
 
 public class CommandSwitcher {
 
@@ -16,7 +17,12 @@ public class CommandSwitcher {
         try {
             switch (Commands.valueOf(cmd)){
 
-                case FU:
+                case GC:
+                    GumCommand gc = new GumCommand();
+                    executor.executeCommand(gc);
+                    break;
+
+                case FC:
                     FortuneCommand fc = new FortuneCommand();
                     executor.executeCommand(fc);
                     break;

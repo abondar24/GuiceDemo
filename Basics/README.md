@@ -2,8 +2,8 @@
 
 Google Guice basic demos.
 
-1. Fortune (fu) - Basic Guice DI with binding annotation
-
+1. Fortune (fc) - Basic Guice DI with binding annotation
+2. Gum (gc) - Provider usage in Guice
 
 Argument names for demos are in ().
 

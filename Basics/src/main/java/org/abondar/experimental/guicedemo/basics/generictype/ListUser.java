@@ -1,4 +1,4 @@
-package org.abondar.experimental.guicedemo.basics.typeliteral;
+package org.abondar.experimental.guicedemo.basics.generictype;
 
 import com.google.inject.Inject;
 import com.google.inject.name.Named;

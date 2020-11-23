@@ -3,7 +3,8 @@ package org.abondar.experimental.guicedemo.basics.command;
 
 import org.abondar.experimental.guicedemo.basics.fortune.command.FortuneCommand;
 import org.abondar.experimental.guicedemo.basics.gum.GumCommand;
-import org.abondar.experimental.guicedemo.basics.typeliteral.GenericTypeCommand;
+import org.abondar.experimental.guicedemo.basics.generictype.GenericTypeCommand;
+import org.abondar.experimental.guicedemo.basics.properties.PropertiesCommand;
 
 public class CommandSwitcher {
 
@@ -33,7 +34,12 @@ public class CommandSwitcher {
                     executor.executeCommand(fc);
                     break;
 
+                case PC:
+                    PropertiesCommand pc = new PropertiesCommand();
+                    executor.executeCommand(pc);
+                    break;
             }
+
         } catch (IllegalArgumentException ex){
             System.out.println("Check documentation for command list");
             System.exit(1);

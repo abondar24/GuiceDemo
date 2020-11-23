@@ -1,6 +1,7 @@
 package org.abondar.experimental.guicedemo.basics.command;
 
 
+import org.abondar.experimental.guicedemo.basics.concert.ConcertCommand;
 import org.abondar.experimental.guicedemo.basics.customscope.command.CustomScopeCommand;
 import org.abondar.experimental.guicedemo.basics.fortune.command.FortuneCommand;
 import org.abondar.experimental.guicedemo.basics.gum.GumCommand;
@@ -20,6 +21,11 @@ public class CommandSwitcher {
     public void executeCommand(String cmd){
         try {
             switch (Commands.valueOf(cmd)){
+
+                case CC:
+                    ConcertCommand cc = new ConcertCommand();
+                    executor.executeCommand(cc);
+                    break;
 
                 case CSC:
                     CustomScopeCommand csc = new CustomScopeCommand();

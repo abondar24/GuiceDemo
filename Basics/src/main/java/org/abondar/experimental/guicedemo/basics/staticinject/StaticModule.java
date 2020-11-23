@@ -10,6 +10,6 @@ public class StaticModule extends AbstractModule {
     @Override
     protected void configure() {
         bindConstant().annotatedWith(Names.named("s")).to("D'OH!");
-        requestStaticInjection(StaticInjectionMain.class);
+        requestStaticInjection(StaticInjectionCommand.class);
     }
 }

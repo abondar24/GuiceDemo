@@ -5,6 +5,7 @@ import org.abondar.experimental.guicedemo.basics.fortune.command.FortuneCommand;
 import org.abondar.experimental.guicedemo.basics.gum.GumCommand;
 import org.abondar.experimental.guicedemo.basics.generictype.GenericTypeCommand;
 import org.abondar.experimental.guicedemo.basics.properties.PropertiesCommand;
+import org.abondar.experimental.guicedemo.basics.staticinject.StaticInjectionCommand;
 
 public class CommandSwitcher {
 
@@ -37,6 +38,11 @@ public class CommandSwitcher {
                 case PC:
                     PropertiesCommand pc = new PropertiesCommand();
                     executor.executeCommand(pc);
+                    break;
+
+                case SIC:
+                    StaticInjectionCommand sic = new StaticInjectionCommand();
+                    executor.executeCommand(sic);
                     break;
             }
 

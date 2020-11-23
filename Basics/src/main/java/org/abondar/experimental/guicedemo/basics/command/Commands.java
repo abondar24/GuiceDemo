@@ -5,4 +5,5 @@ public enum  Commands {
     GTC,
     FC,
     PC,
+    SIC,
 }

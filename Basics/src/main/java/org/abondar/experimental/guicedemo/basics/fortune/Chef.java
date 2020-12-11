@@ -10,7 +10,7 @@ public class Chef {
     private final FortuneService service;
 
     @Inject
-    public Chef(@Mega FortuneService service){
+    public Chef(@Funny FortuneService service){
         this.service = service;
     }
 

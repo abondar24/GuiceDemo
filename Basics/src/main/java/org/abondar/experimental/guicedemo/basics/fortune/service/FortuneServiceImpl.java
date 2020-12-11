@@ -1,6 +1,6 @@
 package org.abondar.experimental.guicedemo.basics.fortune.service;
 
-import java.util.Arrays;
+import javax.inject.Inject;
 import java.util.List;
 import java.util.Random;
 
@@ -9,13 +9,15 @@ import java.util.Random;
  */
 public class FortuneServiceImpl implements FortuneService {
 
-    private static final List<String> MESSAGES = Arrays.asList(
-            "I like salo",
-            "Vodka is shit");
+    private final List<String> messages;
 
+    @Inject
+    public FortuneServiceImpl (List<String> messages){
+        this.messages = messages;
+    }
 
     @Override
     public String randomFortune() {
-        return MESSAGES.get(new Random().nextInt(MESSAGES.size()));
+        return messages.get(new Random().nextInt(messages.size()));
     }
 }

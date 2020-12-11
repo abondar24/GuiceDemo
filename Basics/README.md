@@ -9,6 +9,7 @@ Google Guice basic demos.
 5. Properties (pc) - Read properties from properties file.
 6. Static Injection (sic) - Static injection usage.
 7. Custom Scope (csc) - Custom scope creation and usage.
+8. JMX (jmx) - Register custom JMX bean via guice.
 Argument names for demos are in ().
 
 
